@@ -1,0 +1,17 @@
+
+.margin {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--tertiary-color);
+}
+.navbar h1 {
+  font-size: 2rem;
+  color: #fff;
+  
+}
