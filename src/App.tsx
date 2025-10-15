@@ -1,6 +1,7 @@
 import Margin from './layout/margin'
 import Navbar from './components/Navbar/Navbar'
 import CachuchasBanner from './assets/caps/cachuchas-banner.svg'
+import GoDown from './assets/caps/go-down.svg'
 
 import './App.css'
 import TwoColumns from './layout/2columns'
@@ -20,9 +21,11 @@ function App() {
             </div>
             <button>Acceder</button>
           </div>
-
         </TwoColumns>
-
+        <section className="go-down">
+          <img src={GoDown} />
+          <button>Abajo</button>
+        </section>
       </Margin>
     </>
   )
