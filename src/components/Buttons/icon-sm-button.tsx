@@ -1,4 +1,4 @@
-import '../../styles/iconSm-button.css'
+import '../../styles/buttons.css'
 
 type Props = {
     text: string;

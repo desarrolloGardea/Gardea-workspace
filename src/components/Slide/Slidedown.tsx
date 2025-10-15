@@ -15,7 +15,6 @@ const SlideDown = () => {
                 icon={ArrowDown}
                 />
             </div>
-
         </section>
 
     )

@@ -1,5 +1,5 @@
 import TwoColumns from '../../layout/2columns'
-import '../../styles/Navbar.css'
+import '../../styles/navbar.css'
 
 const Navbar = () => {
   return (

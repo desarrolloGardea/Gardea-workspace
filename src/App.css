@@ -1,8 +1,8 @@
-
 .margin {
   margin-right: 2rem;
   margin-left: 2rem;
 }
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -10,8 +10,158 @@
   width: 100%;
   background-color: var(--tertiary-color);
 }
+
 .navbar h1 {
   font-size: 2rem;
   color: #fff;
-  
+
+}
+
+.caps-against {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  overflow-x: clip;
+}
+
+.cap-left-container {
+  display: flex;
+  align-items: center;
+  transform: translateX(-30%);
+}
+
+.cap-left-container img {
+  width: auto;
+  height: auto;
+}
+
+.cap-left-container h4 {
+  font-size: 2.6rem;
+  color: var(--tertiary-color);
+  left: 0;
+  width: 30%;
+  margin-left: -12rem;
+  text-align: left;
+}
+
+.cap-right-container {
+  display: flex;
+  align-items: center;
+  transform: translateX(25%);
+  margin-top: 2rem;
+}
+
+.cap-right-container img {
+  width: auto;
+  height: auto;
+}
+
+.cap-right-container h4 {
+  font-size: 2.6rem;
+  color: var(--tertiary-color);
+  margin-left: -15rem;
+  text-align: right;
+}
+
+.mision-establishment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.mision-establishment h4 {
+  font-size: 2.6rem;
+  color: var(--tertiary-color);
+  margin-bottom: 1rem;
+}
+
+.mision-establishment p {
+  font-size: 1.1rem;
+  color: var(--tertiary-color);
+  width: 60%;
+  text-align: left;
+}
+
+.cap-bluecaps-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cap-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 8rem;
+}
+
+.cap-top>h4 {
+  font-size: 2rem;
+  color: var(--tertiary-color);
+}
+
+.vision-establishment>h4 {
+  font-size: 2rem;
+  text-align: left;
+  color: var(--tertiary-color);
+  margin-bottom: 0;
+}
+
+.vision-establishment p {
+  font-size: 1.1rem;
+  color: var(--tertiary-color);
+  width: 60%;
+  text-align: left;
+}
+
+.toolbox-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 8rem;
+}
+
+.toolbox-title>h4 {
+  font-size: 2rem;
+  color: var(--tertiary-color);
+  margin-top: 0;
+}
+
+.cap-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.card-cap-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.button-on-border {
+    position: absolute;
+    bottom: -20px;
+    left: 70%;
+    transform: translateX(-50%);
+}
+
+.card-cap-wrapper > .btn-w {
+  overflow-x: clip;
+  width: 6.5rem;
 }

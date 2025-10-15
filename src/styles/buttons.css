@@ -20,3 +20,21 @@
     height: 2.5rem;
     border-radius: 10px;
 }
+
+/* Flat-md-button */
+.flat-md-button-container button {
+    background-color: var(--tertiary-color);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 6.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    padding-left: 1rem;
+}
+.flat-md-button-container button:hover {
+    background-color: var(--secondary-color);
+}
