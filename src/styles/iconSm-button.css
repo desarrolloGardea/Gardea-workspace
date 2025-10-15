@@ -1,0 +1,22 @@
+
+.icon-sm-button-container img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.icon-sm-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.icon-sm-button-container button {
+    background-color: var(--tertiary-color);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 6.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+}
