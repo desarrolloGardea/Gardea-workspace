@@ -23,101 +23,109 @@ function App() {
   return (
     <>
       <Navbar />
-      <Margin>
-        <TwoColumns>
-          <img src={CachuchasBanner} />
-          <div className="title-banner">
-            <div className="title">
-              <h2>Accede a tus <span>herramientas</span> de trabajo</h2>
-              <h4>todo desde un mismo lugar</h4>
+      <section id="section-1">
+        <Margin>
+          <TwoColumns>
+            <img src={CachuchasBanner} />
+            <div className="title-banner">
+              <div className="title">
+                <h2>Accede a tus <span>herramientas</span> de trabajo</h2>
+                <h4>todo desde un mismo lugar</h4>
+              </div>
+              <button>Acceder</button>
             </div>
-            <button>Acceder</button>
-          </div>
-        </TwoColumns>
-        <SlideDown />
-      </Margin>
-      <section className="caps-against">
-        <div className="cap-left-container">
-          <img src={CapLeft} alt="Icono de flecha hacia la izquierda" />
-          <h4>Recuerda que juntos hacemos la fuerza.</h4>
-        </div>
-
-        <div className="cap-right-container">
-          <h4>Trabajo en equipo.</h4>
-          <img src={CapRight} alt="Icono de flecha hacia la derecha" />
-        </div>
+          </TwoColumns>
+          <SlideDown nextSectionId="section-2" />
+        </Margin>
       </section>
-      <Margin>
-        <div className="mision-establishment">
-          <h4>Misión</h4>
-          <p>Somos una empresa fundada en  la ciudad de Chihuahua, con el propósito de desarrollar distintos  canales de negocio buscando con pasión las tendencias de moda y  deporte que impulsen el crecimiento de nuestros colaboradores
-          </p>
-        </div>
-        <SlideDown />
-
-        <section className="cap-bluecaps-container">
-          <div className="cap-top">
-            <h4>Comprometidos con la excelencia.</h4>
-            <img src={CapTop} alt="Icono de flecha hacia arriba" />
+      <section id="section-2">
+        <section className="caps-against">
+          <div className="cap-left-container">
+            <img src={CapLeft} alt="Icono de flecha hacia la izquierda" />
+            <h4>Recuerda que juntos hacemos la fuerza.</h4>
           </div>
-          <div className="cap-front">
-            <img src={CapFront} alt="Icono de flecha hacia adelante" />
-            <div className="vision-establishment">
-              <h4>Visión</h4>
-              <p>Somos una empresa fundada en  la ciudad de Chihuahua, con el propósito de desarrollar distintos  canales de negocio buscando con pasión las tendencias de moda y  deporte que impulsen el crecimiento de nuestros colaboradores
-              </p>
-            </div>
+
+          <div className="cap-right-container">
+            <h4>Trabajo en equipo.</h4>
+            <img src={CapRight} alt="Icono de flecha hacia la derecha" />
           </div>
         </section>
-        <SlideDown />
-        <section className="toolbox-container">
-          <div className="toolbox-title">
-            <img src={CapBelt} alt="Icono de flecha hacia adelante" />
-            <h4>Herramientas</h4>
+        <Margin>
+          <div className="mision-establishment">
+            <h4>Misión</h4>
+            <p>Somos una empresa fundada en  la ciudad de Chihuahua, con el propósito de desarrollar distintos  canales de negocio buscando con pasión las tendencias de moda y  deporte que impulsen el crecimiento de nuestros colaboradores
+            </p>
           </div>
-          <div className="cap-wrapper">
-            <div className="card-cap-wrapper">
-              <Card
-                title="Gestion de depositos"
-                description="Accede a la gestion de depositos" />
-              <div className="button-on-border">
-                <FlatMdButton text="Ir" url="#" />
+          <SlideDown nextSectionId="section-3" />
+        </Margin>
+      </section>
+      <section id="section-3">
+        <Margin>
+          <section className="cap-bluecaps-container">
+            <div className="cap-top">
+              <h4>Comprometidos con la excelencia.</h4>
+              <img src={CapTop} alt="Icono de flecha hacia arriba" />
+            </div>
+            <div className="cap-front">
+              <img src={CapFront} alt="Icono de flecha hacia adelante" />
+              <div className="vision-establishment">
+                <h4>Visión</h4>
+                <p>Somos una empresa fundada en  la ciudad de Chihuahua, con el propósito de desarrollar distintos  canales de negocio buscando con pasión las tendencias de moda y  deporte que impulsen el crecimiento de nuestros colaboradores
+                </p>
               </div>
             </div>
-            <div className="card-cap-wrapper">
-              <Card
-                title="Gestion de Plan de envíos"
-                description="Accede a la gestion de depositos"
-                imageBackgroundColor="#4E0A79" />
-              <div className="button-on-border">
-                <FlatMdButton text="Ir" url="https://gestionrepartos.2cap.com.mx/login" />
-              </div>
+          </section>
+          <SlideDown nextSectionId="section-4" />
+        </Margin>
+      </section>
+      <section id="section-4">
+        <Margin>
+          <section className="toolbox-container">
+            <div className="toolbox-title">
+              <img src={CapBelt} alt="Icono de flecha hacia adelante" />
+              <h4>Herramientas</h4>
             </div>
-            <div className="card-cap-wrapper">
-              <Card
-                title="Gestion de depositos"
-                description="Accede a la gestion de depositos" />
-              <div className="button-on-border">
-                <FlatMdButton text="Ir" url="#" />
+            <div className="cap-wrapper">
+              <div className="card-cap-wrapper">
+                <Card
+                  title="Gestion de depositos"
+                  description="Accede a la gestion de depositos" />
+                <div className="button-on-border">
+                  <FlatMdButton text="Ir" url="#" />
+                </div>
               </div>
-            </div>
-            <div className="card-cap-wrapper">
-              <Card
-                title="Gestion de depositos"
-                description="Accede a la gestion de depositos" />
-              <div className="btn-w button-on-border">
-                <FlatMdButton text="Ir" url="#" />
+              <div className="card-cap-wrapper">
+                <Card
+                  title="Gestion de depositos"
+                  description="Accede a la gestion de depositos" />
+                <div className="button-on-border">
+                  <FlatMdButton text="Ir" url="#" />
+                </div>
               </div>
+              <div className="card-cap-wrapper">
+                <Card
+                  title="Gestion de depositos"
+                  description="Accede a la gestion de depositos" />
+                <div className="button-on-border">
+                  <FlatMdButton text="Ir" url="#" />
+                </div>
+              </div>
+              <div className="card-cap-wrapper">
+                <Card
+                  title="Gestion de depositos"
+                  description="Accede a la gestion de depositos" />
+                <div className="btn-w button-on-border">
+                  <FlatMdButton text="Ir" url="#" />
+                </div>
+              </div>
+
+
             </div>
+          </section>
 
-
-          </div>
-        </section>
-
-        <SlideDown />
-
-      </Margin>
-
+          <SlideDown />
+        </Margin>
+      </section>
     </>
   )
 }
