@@ -6,6 +6,10 @@ import SlideDown from './components/Slide/Slidedown'
 import Card from './components/Cards/card'
 import FlatMdButton from './components/Buttons/flat-md-button'
 
+import CAP2 from './assets/icons/2CAP_ICON.svg';
+import PELOGO from './assets/icons/PE_LOGO.svg';
+import GrupoGardeaW from './assets/icons/GRUPO_ICON_B.svg';
+import GrupoGardeaB from './assets/icons/GRUPO_ICON_BL.svg';
 
 
 import CachuchasBanner from './assets/caps/cachuchas-banner.svg'
@@ -32,9 +36,10 @@ function App() {
                 <h2>Accede a tus <span>herramientas</span> de trabajo</h2>
                 <h4>todo desde un mismo lugar</h4>
               </div>
-              <button>Acceder</button>
+              <a href="#section-4">Acceder</a>
             </div>
           </TwoColumns>
+          
           <SlideDown nextSectionId="section-2" />
         </Margin>
       </section>
@@ -59,7 +64,9 @@ function App() {
           <SlideDown nextSectionId="section-3" />
         </Margin>
       </section>
-      <section id="section-3">
+
+  
+      <section id="section-3" className="section-gap">
         <Margin>
           <section className="cap-bluecaps-container">
             <div className="cap-top">
@@ -69,8 +76,11 @@ function App() {
             <div className="cap-front">
               <img src={CapFront} alt="Icono de flecha hacia adelante" />
               <div className="vision-establishment">
-                <h4>Visión</h4>
-                <p>Somos una empresa fundada en  la ciudad de Chihuahua, con el propósito de desarrollar distintos  canales de negocio buscando con pasión las tendencias de moda y  deporte que impulsen el crecimiento de nuestros colaboradores
+                <h4>Nosotros</h4>
+                <p> Somos una empresa familiar especializada en el diseño, fabricación y distribución de gorras de marcas reconocidas como New Era, Sport Caps, Goorin Bros, Black Clover y Mercedes, entre otras. Fundada en 1997, inicialmente nos centramos en la distribución de gorras lisas, pero con el tiempo hemos identificado una demanda clave en el mercado:
+                </p>
+                <p><span>LA CALIDAD</span>. Nuestro objetivo es brindar a nuestros clientes la mejor gorra del mercado, destacando por la innovación en diseños y tecnología de tejidos, todo a un precio justo.</p>
+                <p> Más que una distribuidora de gorras, somos una marca comprometida con la excelencia.
                 </p>
               </div>
             </div>
@@ -78,6 +88,9 @@ function App() {
           <SlideDown nextSectionId="section-4" />
         </Margin>
       </section>
+
+
+    
       <section id="section-4">
         <Margin>
           <section className="toolbox-container">
@@ -89,43 +102,43 @@ function App() {
               <div className="card-cap-wrapper">
                 <Card
                   title="Gestion de depositos"
-                  description="Accede a la gestion de depositos" />
+                  description="Nuestra herramienta para gestionar los dépositos de nuestros colegas regionales."
+                  img={CAP2} />
                 <div className="button-on-border">
-                  <FlatMdButton text="Ir" url="#" />
+                  <FlatMdButton text="Ir" url="https://gestiondepositos.2cap.com.mx/" />
                 </div>
               </div>
               <div className="card-cap-wrapper">
                 <Card
-                  title="Gestion de depositos"
-                  description="Accede a la gestion de depositos" />
+                  title="Gestion del sistema de ventas"
+                  description="Nuestra herramienta para gestionar las ventas a nuestros clientes."
+                  img={GrupoGardeaB} />
                 <div className="button-on-border">
-                  <FlatMdButton text="Ir" url="#" />
+                  <FlatMdButton text="Ir" url="https://gestionventas.grupogardea.com/" />
                 </div>
-              </div>
-              <div className="card-cap-wrapper">
+              </div> <div className="card-cap-wrapper">
                 <Card
-                  title="Gestion de depositos"
-                  description="Accede a la gestion de depositos" />
+                  title="Gestion del sistema de repartos"
+                  description="Nuestra herramienta para gestionar repartos a sucursales."
+                  img={PELOGO} />
                 <div className="button-on-border">
-                  <FlatMdButton text="Ir" url="#" />
+                  <FlatMdButton text="Ir" url="https://gestionrepartos.2cap.com.mx/" />
                 </div>
-              </div>
-              <div className="card-cap-wrapper">
+              </div> <div className="card-cap-wrapper">
                 <Card
-                  title="Gestion de depositos"
-                  description="Accede a la gestion de depositos" />
-                <div className="btn-w button-on-border">
-                  <FlatMdButton text="Ir" url="#" />
+                  title="Sistema de Shipedge"
+                  description="Nuestra herramienta para gestionar los dépositos de nuestros colegas regionales."
+                  img={GrupoGardeaW} />
+                <div className="button-on-border">
+                  <FlatMdButton text="Ir" url="http://98.85.105.110:3000/" />
                 </div>
               </div>
-
-
             </div>
           </section>
-
           <SlideDown />
         </Margin>
       </section>
+      
     </>
   )
 }

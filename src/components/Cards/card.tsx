@@ -4,11 +4,12 @@ import '../../styles/card.css'
 type Props = {
     title: string;
     description: string;
+    img?: string;
     imageBackgroundColor?: string;
 }
 
 
-const Card = ({ title, description, imageBackgroundColor }: Props) => {
+const Card = ({ title, description, img, imageBackgroundColor }: Props) => {
 
     const imageContainerStyle = {
         backgroundColor: imageBackgroundColor
@@ -17,7 +18,7 @@ const Card = ({ title, description, imageBackgroundColor }: Props) => {
     return (
         <div className="card-container">
             <div className="img-container" style={imageBackgroundColor ? imageContainerStyle : {}}>
-                <img src={CAP_LOGO} alt="2CAP" />
+                <img src={img || CAP_LOGO} alt="2CAP" />
             </div>
             <div className="brief">
                 <h4>{title}</h4>
