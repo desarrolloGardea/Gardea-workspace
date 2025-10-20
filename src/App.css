@@ -26,6 +26,19 @@
 .img-banner {
   width: 70%;
   height: 70%;
+  animation: floatAnimation 3s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .img-banner img{
   width: 70%;
@@ -53,7 +66,7 @@
 
 .title>h2>span {
   font-weight: 800;
-  background: linear-gradient(to bottom, var(--white-color), var(--quinary-color));
+  background: var(--primary-color);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -82,7 +95,10 @@
   cursor: pointer;
   text-decoration: none;
 }
-
+.title-banner>a:hover {
+    background-color: var(--quinary-color);
+    color: var(--white-color);
+}
 
 .cap-grid {
   display: flex;

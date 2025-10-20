@@ -2,7 +2,6 @@ import './App.css'
 import Margin from './layout/margin'
 import Navbar from './components/Navbar/Navbar'
 import TwoColumns from './layout/2columns'
-import SlideDown from './components/Slide/Slidedown'
 import Card from './components/Cards/card'
 import FlatMdButton from './components/Buttons/flat-md-button'
 
@@ -126,7 +125,6 @@ function App() {
             </div>
           </section>
           <img src={W2Cap} className="w2cap-logo" />
-          <SlideDown />
         </Margin>
       </section>
 
