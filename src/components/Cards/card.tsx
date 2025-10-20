@@ -1,4 +1,4 @@
-import CAP_LOGO from '../../assets/2CAP_LOGO_.svg'
+import CAP_LOGO from '../../assets/icons/cap2_logo.svg'
 import '../../styles/card.css'
 
 type Props = {

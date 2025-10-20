@@ -8,6 +8,7 @@
   background-color: var(--bg-color);
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .light-bg {
@@ -25,6 +26,11 @@
 .img-banner {
   width: 70%;
   height: 70%;
+}
+.img-banner img{
+  width: 70%;
+  height: 70%;
+  margin-top: 1rem;
 }
 
 .title-banner {
@@ -47,7 +53,7 @@
 
 .title>h2>span {
   font-weight: 800;
-  background: linear-gradient(to bottom, var(--white-color), var(--primary-color));
+  background: linear-gradient(to bottom, var(--white-color), var(--quinary-color));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -110,7 +116,7 @@
 .toolbox-container {
   position: relative;
   margin-top: 2rem;
-  height: 100vh;
+  height: auto;
 }
 
 .toolbox-title {
@@ -124,7 +130,7 @@
 .toolbox-title>h4 {
   font-size: 2rem;
   color: var(--white-color);
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 .cap-wrapper {
@@ -206,4 +212,23 @@
   flex-direction: column;
   margin-top: -2rem;
   margin-bottom: -2rem;
+}
+
+.cap2-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  transform: rotate(30deg);
+}
+
+.w2cap-logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  transform: rotate(15deg);
+  padding-left: 1rem
 }

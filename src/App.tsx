@@ -10,11 +10,11 @@ import CAP2 from './assets/icons/2CAP_ICON.svg';
 import PELOGO from './assets/icons/PE_LOGO.svg';
 import GrupoGardeaW from './assets/icons/GRUPO_ICON_B.svg';
 import GrupoGardeaB from './assets/icons/GRUPO_ICON_BL.svg';
+import Cap2Logo from './assets/icons/cap2_logo.svg';
+import W2Cap from './assets/icons/w_2cap.svg';
 
-//import CachuchasBanner from './assets/caps/cachuchas-banner.svg'
-//import Lovers from './assets/myn_lovers.png'
-import Collage from './assets/collage_size.png'
-import MYNLovers from './assets/myn_lovers2.png'
+import Collage from './assets/big-collage.png'
+import MYNLovers from './assets/myn.png'
 import AmeCap from './assets/cap/198733132881_3.jpg'
 import ACap from './assets/cap/197374108033-1.jpg'
 
@@ -49,6 +49,7 @@ function App() {
         <Margin>
           <div className='cap-grid'>
             <TwoColumns>
+              <img src={Cap2Logo} className="cap2-logo" />
               <div className='cap-grid-left'>
                 <img src={AmeCap} alt="Vista lateral de gorra" />
               </div>
@@ -93,7 +94,7 @@ function App() {
                   description="Nuestra herramienta para gestionar los dépositos de nuestros colegas regionales."
                   img={CAP2} />
                 <div className="button-on-border">
-                  <FlatMdButton text="Ir" url="https://gestiondepositos.2cap.com.mx/" />
+                  <FlatMdButton text="Entrar" url="https://gestiondepositos.2cap.com.mx/" />
                 </div>
               </div>
 
@@ -103,7 +104,7 @@ function App() {
                   description="Nuestra herramienta para gestionar las ventas a nuestros clientes."
                   img={GrupoGardeaB} />
                 <div className="button-on-border">
-                  <FlatMdButton text="Ir" url="https://gestionventas.grupogardea.com/" />
+                  <FlatMdButton text="Entrar" url="https://gestionventas.grupogardea.com/" />
                 </div>
               </div> <div className="card-cap-wrapper">
                 <Card
@@ -111,7 +112,7 @@ function App() {
                   description="Nuestra herramienta para gestionar repartos a sucursales."
                   img={PELOGO} />
                 <div className="button-on-border">
-                  <FlatMdButton text="Ir" url="https://gestionrepartos.2cap.com.mx/" />
+                  <FlatMdButton text="Entrar" url="https://gestionrepartos.2cap.com.mx/" />
                 </div>
               </div> <div className="card-cap-wrapper">
                 <Card
@@ -119,11 +120,12 @@ function App() {
                   description="Nuestra herramienta para gestionar los dépositos de nuestros colegas regionales."
                   img={GrupoGardeaW} />
                 <div className="button-on-border">
-                  <FlatMdButton text="Ir" url="http://98.85.105.110:3000/" />
+                  <FlatMdButton text="Entrar" url="http://98.85.105.110:3000/" />
                 </div>
               </div>
             </div>
           </section>
+          <img src={W2Cap} className="w2cap-logo" />
           <SlideDown />
         </Margin>
       </section>

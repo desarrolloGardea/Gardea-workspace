@@ -7,7 +7,9 @@ nav {
   justify-content: flex-start;
   align-items: center;
   border-bottom: 2px solid var(--white-color);
-
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar ul {
@@ -36,4 +38,22 @@ nav {
   margin-left: -150px;
   width: 22%;
   height: 22%;
+}
+
+.navbar.dark-theme {
+  background-color: var(--white-color);
+  border-bottom: 2px solid var(--tertiary-color);
+}
+
+.navbar.dark-theme .bss-name img {
+  filter: invert(100%);
+}
+
+.navbar.dark-theme a {
+  color: var(--tertiary-color);
+}
+
+.navbar.dark-theme a:hover {
+  color: var(--tertiary-color);
+  font-weight: 600;
 }
