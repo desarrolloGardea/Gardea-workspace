@@ -3,8 +3,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+
 }
-.slide-down img{
+
+.slide-down img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20%;
     height: 20%;
 }

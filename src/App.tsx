@@ -11,15 +11,12 @@ import PELOGO from './assets/icons/PE_LOGO.svg';
 import GrupoGardeaW from './assets/icons/GRUPO_ICON_B.svg';
 import GrupoGardeaB from './assets/icons/GRUPO_ICON_BL.svg';
 
-
 import CachuchasBanner from './assets/caps/cachuchas-banner.svg'
-import CapRight from './assets/caps/cap-right.svg'
-import CapLeft from './assets/caps/cap-left.svg'
-import CapTop from './assets/caps/cap-up.svg'
-import CapFront from './assets/caps/cap-front.svg'
+import CapRight2 from './assets/caps/cap-right2.svg'
+import CapBack from './assets/caps/cap-back.svg'
+import AmeCap from './assets/cap/198733132881_3.jpg'
+import ACap from './assets/cap/197374108033-1.jpg'
 import CapBelt from './assets/caps/cap-belt.svg'
-
-
 
 
 function App() {
@@ -30,75 +27,65 @@ function App() {
       <section id="section-1">
         <Margin>
           <TwoColumns>
-            <img src={CachuchasBanner} />
+            <div>
+              <img src={CachuchasBanner} />
+            </div>
             <div className="title-banner">
               <div className="title">
                 <h2>Accede a tus <span>herramientas</span> de trabajo</h2>
                 <h4>todo desde un mismo lugar</h4>
               </div>
-              <a href="#section-4">Acceder</a>
+              <a href="#section-3">Acceder</a>
             </div>
           </TwoColumns>
-          
+
           <SlideDown nextSectionId="section-2" />
         </Margin>
       </section>
+
       <section id="section-2">
-        <section className="caps-against">
-          <div className="cap-left-container">
-            <img src={CapLeft} alt="Icono de flecha hacia la izquierda" />
-            <h4>Recuerda que juntos hacemos la fuerza.</h4>
-          </div>
-
-          <div className="cap-right-container">
-            <h4>Trabajo en equipo.</h4>
-            <img src={CapRight} alt="Icono de flecha hacia la derecha" />
-          </div>
-        </section>
         <Margin>
-          <div className="mision-establishment">
-            <h4>Misión</h4>
-            <p>Somos una empresa fundada en  la ciudad de Chihuahua, con el propósito de desarrollar distintos  canales de negocio buscando con pasión las tendencias de moda y  deporte que impulsen el crecimiento de nuestros colaboradores
-            </p>
-          </div>
-          <SlideDown nextSectionId="section-3" />
-        </Margin>
-      </section>
-
-  
-      <section id="section-3" className="section-gap">
-        <Margin>
-          <section className="cap-bluecaps-container">
-            <div className="cap-top">
-              <h4>Comprometidos con la excelencia.</h4>
-              <img src={CapTop} alt="Icono de flecha hacia arriba" />
-            </div>
-            <div className="cap-front">
-              <img src={CapFront} alt="Icono de flecha hacia adelante" />
-              <div className="vision-establishment">
-                <h4>Nosotros</h4>
-                <p> Somos una empresa familiar especializada en el diseño, fabricación y distribución de gorras de marcas reconocidas como New Era, Sport Caps, Goorin Bros, Black Clover y Mercedes, entre otras. Fundada en 1997, inicialmente nos centramos en la distribución de gorras lisas, pero con el tiempo hemos identificado una demanda clave en el mercado:
-                </p>
-                <p><span>LA CALIDAD</span>. Nuestro objetivo es brindar a nuestros clientes la mejor gorra del mercado, destacando por la innovación en diseños y tecnología de tejidos, todo a un precio justo.</p>
-                <p> Más que una distribuidora de gorras, somos una marca comprometida con la excelencia.
-                </p>
+          <div className='cap-grid'>
+            <TwoColumns>
+              <div className='cap-grid-left'>
+                <img src={AmeCap} alt="Vista lateral de gorra" />
               </div>
-            </div>
-          </section>
-          <SlideDown nextSectionId="section-4" />
+              <div className="cap-grid-text">
+                <h3>Nuestra Historia</h3>
+                <p>Todo comenzó en calle Morelos, Monterrey, Nuevo León con nuestra primera tienda el
+                  1 de mayo de 1996. De una visión familiar emerge la pasión de vestir a México con las
+                  mejores marcas de gorras. Hoy contamos con más de 60 tiendas a nivel nacional y
+                  llevamos nuestro legado y estilo a LATAM con nuestras primeras tiendas en Chile.</p>
+              </div>
+            </TwoColumns>
+            <TwoColumns>
+              <div className="cap-grid-text">
+                <h3>¿Quienes somos?</h3>
+                <p>hacemos honor a la gorra, cachucha, jockey, cap o cómo tu la
+                  conozcas. Creemos en la autenticidad, el valor y el feeling que te genera al
+                  colocarla sobre tu cabeza y completar tu look. Te traemos las mejores marcas
+                  dentro y fuera del juego, tu eliges la jugada. </p>
+              </div>
+              <div className='cap-grid-right'>
+                <img src={ACap} alt="Vista lateral de gorra" />
+              </div>
+            </TwoColumns>
+          </div>
+
         </Margin>
       </section>
-
-
-    
-      <section id="section-4">
+      <section id="section-3">
         <Margin>
           <section className="toolbox-container">
             <div className="toolbox-title">
               <img src={CapBelt} alt="Icono de flecha hacia adelante" />
               <h4>Herramientas</h4>
             </div>
-            <div className="cap-wrapper">
+            <div className="cap-wrapper-background-container">
+              <img src={CapBack} className="background-cap-left" />
+              <img src={CapRight2} className="background-cap-right" />
+
+            </div>  <div className="cap-wrapper">
               <div className="card-cap-wrapper">
                 <Card
                   title="Gestion de depositos"
@@ -108,6 +95,7 @@ function App() {
                   <FlatMdButton text="Ir" url="https://gestiondepositos.2cap.com.mx/" />
                 </div>
               </div>
+
               <div className="card-cap-wrapper">
                 <Card
                   title="Gestion del sistema de ventas"
@@ -138,7 +126,7 @@ function App() {
           <SlideDown />
         </Margin>
       </section>
-      
+
     </>
   )
 }
