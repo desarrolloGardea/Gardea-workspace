@@ -1,11 +1,12 @@
 nav {
   width: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--bg-color);
   padding: 1rem 2rem;
   height: 40px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  border-bottom: 2px solid var(--white-color);
 
 }
 

@@ -11,12 +11,13 @@ import PELOGO from './assets/icons/PE_LOGO.svg';
 import GrupoGardeaW from './assets/icons/GRUPO_ICON_B.svg';
 import GrupoGardeaB from './assets/icons/GRUPO_ICON_BL.svg';
 
-import CachuchasBanner from './assets/caps/cachuchas-banner.svg'
-import CapRight2 from './assets/caps/cap-right2.svg'
-import CapBack from './assets/caps/cap-back.svg'
+//import CachuchasBanner from './assets/caps/cachuchas-banner.svg'
+//import Lovers from './assets/myn_lovers.png'
+import Collage from './assets/collage_size.png'
+import MYNLovers from './assets/myn_lovers2.png'
 import AmeCap from './assets/cap/198733132881_3.jpg'
 import ACap from './assets/cap/197374108033-1.jpg'
-import CapBelt from './assets/caps/cap-belt.svg'
+
 
 
 function App() {
@@ -24,11 +25,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <section id="section-1">
+      <section id="section-1" className="section1 dark-bg">
         <Margin>
           <TwoColumns>
-            <div>
-              <img src={CachuchasBanner} />
+            <div className='img-banner'>
+              <img src={MYNLovers} />
             </div>
             <div className="title-banner">
               <div className="title">
@@ -38,12 +39,13 @@ function App() {
               <a href="#section-3">Acceder</a>
             </div>
           </TwoColumns>
-
-          <SlideDown nextSectionId="section-2" />
         </Margin>
       </section>
+      <section className='collage-section'>
+        <img src={Collage} />
+      </section>
 
-      <section id="section-2">
+      <section id="section-2" className="light-bg">
         <Margin>
           <div className='cap-grid'>
             <TwoColumns>
@@ -74,18 +76,17 @@ function App() {
 
         </Margin>
       </section>
-      <section id="section-3">
+
+      <section className='collage-section'>
+        <img src={Collage} />
+      </section>
+      <section id="section-3" className="dark-bg">
         <Margin>
           <section className="toolbox-container">
             <div className="toolbox-title">
-              <img src={CapBelt} alt="Icono de flecha hacia adelante" />
               <h4>Herramientas</h4>
             </div>
-            <div className="cap-wrapper-background-container">
-              <img src={CapBack} className="background-cap-left" />
-              <img src={CapRight2} className="background-cap-right" />
-
-            </div>  <div className="cap-wrapper">
+            <div className="cap-wrapper">
               <div className="card-cap-wrapper">
                 <Card
                   title="Gestion de depositos"

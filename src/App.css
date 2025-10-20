@@ -3,7 +3,30 @@
   margin-left: 2rem;
 }
 
+/* bg config */
+.dark-bg {
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+.light-bg {
+  background-color: var(--white-color);
+  margin: 0;
+  padding: 0;
+}
+
 /* HERO SECTION */
+.section1 {
+  height: 90vh;
+  margin-bottom: 1rem;
+}
+
+.img-banner {
+  width: 70%;
+  height: 70%;
+}
+
 .title-banner {
   display: flex;
   justify-content: center;
@@ -14,7 +37,7 @@
 
 .title>h2 {
   font-size: 4.5rem;
-  color: var(--tertiary-color);
+  color: var(--white-color);
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -24,7 +47,7 @@
 
 .title>h2>span {
   font-weight: 800;
-  background: linear-gradient(to bottom, #037FD0, #003F5E);
+  background: linear-gradient(to bottom, var(--white-color), var(--primary-color));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -32,7 +55,7 @@
 
 .title>h4 {
   font-size: 1.5rem;
-  color: var(--tertiary-color);
+  color: var(--white-color);
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -45,9 +68,9 @@
 .title-banner>a {
   padding: 1rem 2rem;
   border: none;
-  border-radius: 5px;
-  background-color: var(--tertiary-color);
-  color: #fff;
+  border-radius: 40px;
+  background-color: var(--white-color);
+  color: var(--tertiary-color);
   width: 250px;
   font-size: 1.2rem;
   cursor: pointer;
@@ -83,19 +106,25 @@
   color: var(--tertiary-color);
 }
 
+/* TOOLBOX SECTION */
+.toolbox-container {
+  position: relative;
+  margin-top: 2rem;
+  height: 100vh;
+}
+
 .toolbox-title {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   gap: 0.5rem;
-  margin-top: 8rem;
 }
 
 .toolbox-title>h4 {
   font-size: 2rem;
-  color: var(--tertiary-color);
-  margin-top: 0;
+  color: var(--white-color);
+  margin-top: 1rem;
 }
 
 .cap-wrapper {
@@ -105,8 +134,9 @@
   align-items: center;
   flex-direction: row;
   gap: 1rem;
-   position: relative;
+  position: relative;
   z-index: 2;
+  height: auto;
 }
 
 .card-cap-wrapper {
@@ -114,9 +144,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-   position: relative;
+  position: relative;
   z-index: 2;
   margin-bottom: 2rem;
+  height: auto;
 }
 
 .button-on-border {
@@ -160,33 +191,19 @@
   gap: 1rem;
 }
 
-.cap-grid .twocolumns > div > img {
+.cap-grid .twocolumns>div>img {
   width: 75%;
   height: 75%;
   margin: 0 auto;
 }
 
-.cap-wrapper-background-container {
-  position: absolute;
-  padding: 2rem 0;
-  z-index: 0;
-}
 
-.background-cap-left {
-  position: relative;
-  transform: translateY(100%);
-  left: 0%;
-  width: 400px;
-   bottom: -60px; 
-  z-index: 0;
-  opacity: 0.2;
-}
-
-.background-cap-right {
-  position: relative;
-  right: -5%;
-  top: 0;
-  width: 300px;
-  z-index: 0;
-  opacity: 0.2;
+/* COLLAGE */
+.collage-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
 }
