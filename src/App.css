@@ -115,7 +115,22 @@
   padding: 0 1rem;
   text-align: left;
 }
-
+.cap-grid-left {
+  width: 25%;
+  height: 25%;
+}
+.cap-grid-left img{
+  width: auto;
+  height: auto;
+}
+.cap-grid-right {
+  width: 25%;
+  height: 25%;
+}
+.cap-grid-right img{
+  width: auto;
+  height: auto;
+}
 .cap-grid-text h3 {
   font-size: 2.5rem;
   color: var(--tertiary-color);
@@ -214,9 +229,10 @@
 }
 
 .cap-grid .twocolumns>div>img {
-  width: 75%;
-  height: 75%;
-  margin: 0 auto;
+  width: 65%;
+  height: 65%;
+  margin: 0;
+  padding: 0;
 }
 
 

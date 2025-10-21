@@ -20,7 +20,6 @@ import ACap from './assets/cap/197374108033-1.jpg'
 
 
 function App() {
-
   return (
     <>
       <Navbar />
@@ -28,7 +27,7 @@ function App() {
         <Margin>
           <TwoColumns>
             <div className='img-banner'>
-              <img src={MYNLovers} />
+              <img src={MYNLovers} alt="@GarciaJared"/>
             </div>
             <div className="title-banner">
               <div className="title">
@@ -53,20 +52,14 @@ function App() {
                 <img src={AmeCap} alt="Vista lateral de gorra" />
               </div>
               <div className="cap-grid-text">
-                <h3>Nuestra Historia</h3>
-                <p>Todo comenzó en calle Morelos, Monterrey, Nuevo León con nuestra primera tienda el
-                  1 de mayo de 1996. De una visión familiar emerge la pasión de vestir a México con las
-                  mejores marcas de gorras. Hoy contamos con más de 60 tiendas a nivel nacional y
-                  llevamos nuestro legado y estilo a LATAM con nuestras primeras tiendas en Chile.</p>
+                <h3>Misión</h3>
+                <p>Desarrollar y posicionar marcas de moda y deporte que conecten emocionalmente con las personas, a través de la creatividad, la autenticidad y el talento mexicano.</p>
               </div>
             </TwoColumns>
             <TwoColumns>
               <div className="cap-grid-text">
-                <h3>¿Quienes somos?</h3>
-                <p>hacemos honor a la gorra, cachucha, jockey, cap o cómo tu la
-                  conozcas. Creemos en la autenticidad, el valor y el feeling que te genera al
-                  colocarla sobre tu cabeza y completar tu look. Te traemos las mejores marcas
-                  dentro y fuera del juego, tu eliges la jugada. </p>
+                <h3>Visión</h3>
+                <p>Ser el grupo líder en Latinoamérica en creación y desarrollo de marcas de moda y deporte, reconocido por llevar la creatividad mexicana al mundo e influir en la cultura a través de historias poderosas que trascienden generaciones. </p>
               </div>
               <div className='cap-grid-right'>
                 <img src={ACap} alt="Vista lateral de gorra" />
