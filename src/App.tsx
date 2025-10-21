@@ -20,6 +20,7 @@ import ACap from './assets/cap/197374108033-1.jpg'
 
 
 function App() {
+
   return (
     <>
       <Navbar />
@@ -27,7 +28,7 @@ function App() {
         <Margin>
           <TwoColumns>
             <div className='img-banner'>
-              <img src={MYNLovers} alt="@GarciaJared"/>
+              <img src={MYNLovers} />
             </div>
             <div className="title-banner">
               <div className="title">
@@ -52,24 +53,31 @@ function App() {
                 <img src={AmeCap} alt="Vista lateral de gorra" />
               </div>
               <div className="cap-grid-text">
-                <h3>Misión</h3>
-                <p>Desarrollar y posicionar marcas de moda y deporte que conecten emocionalmente con las personas, a través de la creatividad, la autenticidad y el talento mexicano.</p>
+                <h3>Propósito</h3>
+                <p style={{ fontSize: '28px' }}>
+                  En Grupo Gardea creemos en el poder de las marcas para contar historias.
+                  Creamos conceptos propios que despiertan pasión y autenticidad a través de la creatividad de nuestro Talento, y traemos a México marcas globales que inspiran a millones.
+                </p>
               </div>
             </TwoColumns>
             <TwoColumns>
               <div className="cap-grid-text">
                 <h3>Visión</h3>
-                <p>Ser el grupo líder en Latinoamérica en creación y desarrollo de marcas de moda y deporte, reconocido por llevar la creatividad mexicana al mundo e influir en la cultura a través de historias poderosas que trascienden generaciones. </p>
+                <p style={{ fontSize: '28px' }}>
+                  Ser el grupo líder en Latinoamérica en creación y desarrollo de marcas de moda y deporte, reconocido por llevar la creatividad mexicana al mundo e influir en la cultura a través de historias poderosas que trascienden generaciones.
+                </p>
+                <h3>Misión</h3>
+                <p style={{ fontSize: '28px' }}>
+                  Desarrollar y posicionar marcas de moda y deporte que conecten emocionalmente con las personas, a través de la creatividad, la autenticidad y el talento mexicano.
+                </p>
               </div>
               <div className='cap-grid-right'>
                 <img src={ACap} alt="Vista lateral de gorra" />
               </div>
             </TwoColumns>
           </div>
-
         </Margin>
       </section>
-
       <section className='collage-section'>
         <img src={Collage} />
       </section>
@@ -80,47 +88,42 @@ function App() {
               <h4>Herramientas</h4>
             </div>
             <div className="cap-wrapper">
-              <div className="card-cap-wrapper">
-                <Card
-                  title="Gestion de depositos"
-                  description="Nuestra herramienta para gestionar los dépositos de nuestros colegas regionales."
-                  img={CAP2} />
-                <div className="button-on-border">
-                  <FlatMdButton text="Entrar" url="https://gestiondepositos.2cap.com.mx/" />
+              <a href="https://gestiondepositos.2cap.com.mx/" target="_blank" rel="noopener noreferrer" className="card-link">
+                <div className="card-cap-wrapper">
+                  <Card
+                    title="Gestión y validación de depósitos"
+                    description=""
+                    img={CAP2} />
                 </div>
-              </div>
-
-              <div className="card-cap-wrapper">
-                <Card
-                  title="Gestion del sistema de ventas"
-                  description="Nuestra herramienta para gestionar las ventas a nuestros clientes."
-                  img={GrupoGardeaB} />
-                <div className="button-on-border">
-                  <FlatMdButton text="Entrar" url="https://gestionventas.grupogardea.com/" />
+              </a>
+              <a href="https://gestionventas.grupogardea.com/" target="_blank" rel="noopener noreferrer" className="card-link">
+                <div className="card-cap-wrapper">
+                  <Card
+                    title="Generador de catálogos B2B"
+                    description=""
+                    img={GrupoGardeaB} />
                 </div>
-              </div> <div className="card-cap-wrapper">
-                <Card
-                  title="Gestion del sistema de repartos"
-                  description="Nuestra herramienta para gestionar repartos a sucursales."
-                  img={PELOGO} />
-                <div className="button-on-border">
-                  <FlatMdButton text="Entrar" url="https://gestionrepartos.2cap.com.mx/" />
+              </a>
+              <a href="https://gestionrepartos.2cap.com.mx/" target="_blank" rel="noopener noreferrer" className="card-link">
+                <div className="card-cap-wrapper">
+                  <Card
+                    title="Gestión de repartos a sucursales"
+                    description=""
+                    img={PELOGO} />
                 </div>
-              </div> <div className="card-cap-wrapper">
-                <Card
-                  title="Sistema de Shipedge"
-                  description="Nuestra herramienta para gestionar los dépositos de nuestros colegas regionales."
-                  img={GrupoGardeaW} />
-                <div className="button-on-border">
-                  <FlatMdButton text="Entrar" url="http://98.85.105.110:3000/" />
+              </a>
+              <a href="http://98.85.105.110:3000/" target="_blank" rel="noopener noreferrer" className="card-link">
+                <div className="card-cap-wrapper">
+                  <Card
+                    title="Integración 3PL"
+                    description=""
+                    img={GrupoGardeaW} />
                 </div>
-              </div>
+              </a>
             </div>
           </section>
-          <img src={W2Cap} className="w2cap-logo" />
         </Margin>
       </section>
-
     </>
   )
 }
